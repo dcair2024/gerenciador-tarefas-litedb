@@ -26,7 +26,7 @@ namespace WinFormsApp6
                 lstTarefa.Items.Add(tarefa);//adciona a tarefa na listabox
                 txtTarefa.Clear(); // Limpa o campo de texto
                 txtTarefa.Focus(); // Foca no campo de texto
-                
+
             }
             else
             {
@@ -125,6 +125,32 @@ namespace WinFormsApp6
         private void Form1_Load(object sender, EventArgs e)
         {
             CarregarTarefas();
+        }
+
+        private void lstTarefa_DoubleClick(object sender, EventArgs e)
+        {
+            if (lstTarefa.SelectedItem is Tarefa tarefaSelecionada)
+            {
+                try
+                {
+                    tarefaSelecionada.Concluida = !tarefaSelecionada.Concluida;
+
+                    TarefaRepository tarefa = new TarefaRepository();
+                    tarefa.Atualizar(tarefaSelecionada);
+
+                    int index = lstTarefa.SelectedIndex;
+                    lstTarefa.Items[index] = tarefaSelecionada;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao atualizar a tarefa: {ex.Message}", "Erro ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"Nanhuma tarefa foi Selcionada", "Aviso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

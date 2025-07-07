@@ -60,9 +60,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(24, 47);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(49, 20);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Tarefa";
             // 
             // lstTarefa
             // 
@@ -71,6 +71,7 @@
             lstTarefa.Name = "lstTarefa";
             lstTarefa.Size = new Size(150, 104);
             lstTarefa.TabIndex = 3;
+            lstTarefa.DoubleClick += lstTarefa_DoubleClick;
             // 
             // txtTarefa
             // 
@@ -83,14 +84,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(269, 292);
             Controls.Add(txtTarefa);
             Controls.Add(lstTarefa);
             Controls.Add(label1);
             Controls.Add(btnAdcionar);
             Controls.Add(btnRemover);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Gerenciador de Tarefas";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();

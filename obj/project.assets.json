@@ -94,11 +94,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\WinFormsApp6\\WinFormsApp6\\WinFormsApp6.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\GerenciadorDeTarefas_\\WinFormsApp6.csproj",
       "projectName": "WinFormsApp6",
-      "projectPath": "C:\\Users\\User\\source\\repos\\WinFormsApp6\\WinFormsApp6\\WinFormsApp6.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\GerenciadorDeTarefas_\\WinFormsApp6.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\WinFormsApp6\\WinFormsApp6\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\GerenciadorDeTarefas_\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
